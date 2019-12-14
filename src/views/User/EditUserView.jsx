@@ -100,7 +100,7 @@ export const EditUserForm = props => (
                   variant="contained"
                   color="secondary"
                   type="button"
-                  onClick={() => props.onClose("add user")}
+                  onClick={() => props.onClose()}
                 >
                   Close
                 </Button>
