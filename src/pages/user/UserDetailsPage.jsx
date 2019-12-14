@@ -16,111 +16,111 @@ export const postUser = values =>
     throw res;
   });
 
-// export const getUsers = () =>
-//     fetch(`http://192.168.1.77:4001/user`, {
-//         method: 'GET',
-//         headers: {
-//             'content-type': 'application/json',
-//         },
-//     }).then(res => {
-//         if (res.ok) {
-//             return res.json()
-//         }
-//         throw res
-//     })
+export const getUsers = () =>
+  fetch(`http://192.168.225.66:8080/findAll`, {
+    method: "GET",
+    headers: {
+      "content-type": "application/json"
+    }
+  }).then(res => {
+    if (res.ok) {
+      return res.json();
+    }
+    throw res;
+  });
 
-const getUsers = () => [
-  {
-    id: 1,
-    unit: "STGPW",
-    typeOfProject: "Retail",
-    noofkeyresourcesneeded: 3,
-    noOfPCsRequired: 3,
-    anyProjectspecificSoftwareRequirement: "no",
-    servicePriority: "no",
-    recoveryTimelines: "no",
-    primaryLocation: "Hyderabad",
-    relocationLocation: "Chennai",
-    primaryBuilding: "B2",
-    relocationBuilding: "B2",
-    keyContact: "9398491296",
-    backupKeyContact: "9848012328",
-    remarks: "location change",
-    dataReviewedBy: "",
-    isWorkfromHomePossible: false,
-    eccAccomodationNeeded: false,
-    transportRequirements: "",
-    resources: [
-      {
-        id: 0,
-        name: "",
-        contactNo: "",
-        address: "",
-        resourceId: 0
-      }
-    ]
-  },
-  {
-    id: 2,
-    unit: "STGPW",
-    typeOfProject: "Retail",
-    noofkeyresourcesneeded: 3,
-    noOfPCsRequired: 3,
-    anyProjectspecificSoftwareRequirement: "no",
-    servicePriority: "no",
-    recoveryTimelines: "no",
-    primaryLocation: "Hyderabad",
-    relocationLocation: "Chennai",
-    primaryBuilding: "B2",
-    relocationBuilding: "B2",
-    keyContact: "9398491296",
-    backupKeyContact: "9848012328",
-    remarks: "location change",
-    dataReviewedBy: "",
-    isWorkfromHomePossible: false,
-    eccAccomodationNeeded: false,
-    transportRequirements: "",
-    resources: [
-      {
-        id: 0,
-        name: "",
-        contactNo: "",
-        address: "",
-        resourceId: 0
-      }
-    ]
-  },
-  {
-    id: 3,
-    unit: "STGPW",
-    typeOfProject: "Retail",
-    noofkeyresourcesneeded: 3,
-    noOfPCsRequired: 3,
-    anyProjectspecificSoftwareRequirement: "no",
-    servicePriority: "no",
-    recoveryTimelines: "no",
-    primaryLocation: "Hyderabad",
-    relocationLocation: "Chennai",
-    primaryBuilding: "B2",
-    relocationBuilding: "B2",
-    keyContact: "9398491296",
-    backupKeyContact: "9848012328",
-    remarks: "location change",
-    dataReviewedBy: "",
-    isWorkfromHomePossible: false,
-    eccAccomodationNeeded: false,
-    transportRequirements: "",
-    resources: [
-      {
-        id: 0,
-        name: "",
-        contactNo: "",
-        address: "",
-        resourceId: 0
-      }
-    ]
-  }
-];
+// const getUsers = () => [
+//   {
+//     id: 1,
+//     unit: "STGPW",
+//     typeOfProject: "Retail",
+//     noofkeyresourcesneeded: 3,
+//     noOfPCsRequired: 3,
+//     anyProjectspecificSoftwareRequirement: "no",
+//     servicePriority: "no",
+//     recoveryTimelines: "no",
+//     primaryLocation: "Hyderabad",
+//     relocationLocation: "Chennai",
+//     primaryBuilding: "B2",
+//     relocationBuilding: "B2",
+//     keyContact: "9398491296",
+//     backupKeyContact: "9848012328",
+//     remarks: "location change",
+//     dataReviewedBy: "",
+//     isWorkfromHomePossible: false,
+//     eccAccomodationNeeded: false,
+//     transportRequirements: "",
+//     resources: [
+//       {
+//         id: 0,
+//         name: "",
+//         contactNo: "",
+//         address: "",
+//         resourceId: 0
+//       }
+//     ]
+//   },
+//   {
+//     id: 2,
+//     unit: "STGPW",
+//     typeOfProject: "Retail",
+//     noofkeyresourcesneeded: 3,
+//     noOfPCsRequired: 3,
+//     anyProjectspecificSoftwareRequirement: "no",
+//     servicePriority: "no",
+//     recoveryTimelines: "no",
+//     primaryLocation: "Hyderabad",
+//     relocationLocation: "Chennai",
+//     primaryBuilding: "B2",
+//     relocationBuilding: "B2",
+//     keyContact: "9398491296",
+//     backupKeyContact: "9848012328",
+//     remarks: "location change",
+//     dataReviewedBy: "",
+//     isWorkfromHomePossible: false,
+//     eccAccomodationNeeded: false,
+//     transportRequirements: "",
+//     resources: [
+//       {
+//         id: 0,
+//         name: "",
+//         contactNo: "",
+//         address: "",
+//         resourceId: 0
+//       }
+//     ]
+//   },
+//   {
+//     id: 3,
+//     unit: "STGPW",
+//     typeOfProject: "Retail",
+//     noofkeyresourcesneeded: 3,
+//     noOfPCsRequired: 3,
+//     anyProjectspecificSoftwareRequirement: "no",
+//     servicePriority: "no",
+//     recoveryTimelines: "no",
+//     primaryLocation: "Hyderabad",
+//     relocationLocation: "Chennai",
+//     primaryBuilding: "B2",
+//     relocationBuilding: "B2",
+//     keyContact: "9398491296",
+//     backupKeyContact: "9848012328",
+//     remarks: "location change",
+//     dataReviewedBy: "",
+//     isWorkfromHomePossible: false,
+//     eccAccomodationNeeded: false,
+//     transportRequirements: "",
+//     resources: [
+//       {
+//         id: 0,
+//         name: "",
+//         contactNo: "",
+//         address: "",
+//         resourceId: 0
+//       }
+//     ]
+//   }
+// ];
 
 export const getUserById = userId =>
   fetch(`http://192.168.1.77:4001/user/${userId}`, {
@@ -163,104 +163,104 @@ export const deleteBatchById = userId =>
     throw res;
   });
 
-export const userDetailValues = [
-  {
-    id: 1,
-    unit: "STGPW",
-    typeOfProject: "Retail",
-    noofkeyresourcesneeded: 3,
-    noOfPCsRequired: 3,
-    anyProjectspecificSoftwareRequirement: "no",
-    servicePriority: "no",
-    recoveryTimelines: "no",
-    primaryLocation: "Hyderabad",
-    relocationLocation: "Chennai",
-    primaryBuilding: "B2",
-    relocationBuilding: "B2",
-    keyContact: "9398491296",
-    backupKeyContact: "9848012328",
-    remarks: "location change",
-    dataReviewedBy: "",
-    isWorkfromHomePossible: false,
-    eccAccomodationNeeded: false,
-    transportRequirements: "",
-    resources: [
-      {
-        id: 0,
-        name: "",
-        contactNo: "",
-        address: "",
-        resourceId: 0
-      }
-    ]
-  },
-  {
-    id: 2,
-    unit: "STGPW",
-    typeOfProject: "Retail",
-    noofkeyresourcesneeded: 3,
-    noOfPCsRequired: 3,
-    anyProjectspecificSoftwareRequirement: "no",
-    servicePriority: "no",
-    recoveryTimelines: "no",
-    primaryLocation: "Hyderabad",
-    relocationLocation: "Chennai",
-    primaryBuilding: "B2",
-    relocationBuilding: "B2",
-    keyContact: "9398491296",
-    backupKeyContact: "9848012328",
-    remarks: "location change",
-    dataReviewedBy: "",
-    isWorkfromHomePossible: false,
-    eccAccomodationNeeded: false,
-    transportRequirements: "",
-    resources: [
-      {
-        id: 0,
-        name: "",
-        contactNo: "",
-        address: "",
-        resourceId: 0
-      }
-    ]
-  },
-  {
-    id: 3,
-    unit: "STGPW",
-    typeOfProject: "Retail",
-    noofkeyresourcesneeded: 3,
-    noOfPCsRequired: 3,
-    anyProjectspecificSoftwareRequirement: "no",
-    servicePriority: "no",
-    recoveryTimelines: "no",
-    primaryLocation: "Hyderabad",
-    relocationLocation: "Chennai",
-    primaryBuilding: "B2",
-    relocationBuilding: "B2",
-    keyContact: "9398491296",
-    backupKeyContact: "9848012328",
-    remarks: "location change",
-    dataReviewedBy: "",
-    isWorkfromHomePossible: false,
-    eccAccomodationNeeded: false,
-    transportRequirements: "",
-    resources: [
-      {
-        id: 0,
-        name: "",
-        contactNo: "",
-        address: "",
-        resourceId: 0
-      }
-    ]
-  }
-];
+// export const userDetailValues = [
+//   {
+//     id: 1,
+//     unit: "STGPW",
+//     typeOfProject: "Retail",
+//     noofkeyresourcesneeded: 3,
+//     noOfPCsRequired: 3,
+//     anyProjectspecificSoftwareRequirement: "no",
+//     servicePriority: "no",
+//     recoveryTimelines: "no",
+//     primaryLocation: "Hyderabad",
+//     relocationLocation: "Chennai",
+//     primaryBuilding: "B2",
+//     relocationBuilding: "B2",
+//     keyContact: "9398491296",
+//     backupKeyContact: "9848012328",
+//     remarks: "location change",
+//     dataReviewedBy: "",
+//     isWorkfromHomePossible: false,
+//     eccAccomodationNeeded: false,
+//     transportRequirements: "",
+//     resources: [
+//       {
+//         id: 0,
+//         name: "",
+//         contactNo: "",
+//         address: "",
+//         resourceId: 0
+//       }
+//     ]
+//   },
+//   {
+//     id: 2,
+//     unit: "STGPW",
+//     typeOfProject: "Retail",
+//     noofkeyresourcesneeded: 3,
+//     noOfPCsRequired: 3,
+//     anyProjectspecificSoftwareRequirement: "no",
+//     servicePriority: "no",
+//     recoveryTimelines: "no",
+//     primaryLocation: "Hyderabad",
+//     relocationLocation: "Chennai",
+//     primaryBuilding: "B2",
+//     relocationBuilding: "B2",
+//     keyContact: "9398491296",
+//     backupKeyContact: "9848012328",
+//     remarks: "location change",
+//     dataReviewedBy: "",
+//     isWorkfromHomePossible: false,
+//     eccAccomodationNeeded: false,
+//     transportRequirements: "",
+//     resources: [
+//       {
+//         id: 0,
+//         name: "",
+//         contactNo: "",
+//         address: "",
+//         resourceId: 0
+//       }
+//     ]
+//   },
+//   {
+//     id: 3,
+//     unit: "STGPW",
+//     typeOfProject: "Retail",
+//     noofkeyresourcesneeded: 3,
+//     noOfPCsRequired: 3,
+//     anyProjectspecificSoftwareRequirement: "no",
+//     servicePriority: "no",
+//     recoveryTimelines: "no",
+//     primaryLocation: "Hyderabad",
+//     relocationLocation: "Chennai",
+//     primaryBuilding: "B2",
+//     relocationBuilding: "B2",
+//     keyContact: "9398491296",
+//     backupKeyContact: "9848012328",
+//     remarks: "location change",
+//     dataReviewedBy: "",
+//     isWorkfromHomePossible: false,
+//     eccAccomodationNeeded: false,
+//     transportRequirements: "",
+//     resources: [
+//       {
+//         id: 0,
+//         name: "",
+//         contactNo: "",
+//         address: "",
+//         resourceId: 0
+//       }
+//     ]
+//   }
+// ];
 
 export class UsersPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      users: userDetailValues,
+      users: [],
       addUserData: {
         unit: "",
         typeOfProject: "",
@@ -327,8 +327,9 @@ export class UsersPage extends React.Component {
   }
 
   async componentDidMount() {
-    // const getUsers = await fetch('http://localhost:4001/user')
-    const users = getUsers();
+    const getUsers = await fetch("http://192.168.225.66:8080/findAll");
+    const users = await getUsers.json();
+    console.log(users);
     this.setState({ users: users });
   }
 

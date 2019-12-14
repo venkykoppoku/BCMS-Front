@@ -93,15 +93,11 @@ export const AddUserForm = props => (
                     <>
                       {values.resources.map((r, i) => (
                         <div key={r.id} className="fieldArray">
-                          <MFTextField name={`criticalResources[${i}].name`} />
+                          <MFTextField name={`resources[${i}].name`} />
+                          <MFTextField name={`resources[${i}].contactNo`} />
+                          <MFTextField name={`resources[${i}].address`} />
                           <MFTextField
-                            name={`criticalResources[${i}].contactNo`}
-                          />
-                          <MFTextField
-                            name={`criticalResources[${i}].address`}
-                          />
-                          <MFTextField
-                            name={`criticalResources[${i}].resourceId`}
+                            name={`resources[${i}].resourceId`}
                             type="number"
                           />
                           <div>

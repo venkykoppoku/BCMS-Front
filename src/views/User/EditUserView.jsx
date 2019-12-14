@@ -21,9 +21,12 @@ export const EditUserForm = props => (
             <Form>
               <MFTextField name="unit" type="text" />
               <MFTextField name="typeOfProject" type="text" />
-              <MFTextField name="noOfKeyResourcesNeeded" type="number" />
-              <MFTextField name="noOfPcsRequired" type="number" />
-              <MFTextField name="projectSpecificSoftwareRequired" type="text" />
+              <MFTextField name="noofkeyresourcesneeded" type="number" />
+              <MFTextField name="noOfPCsRequired" type="number" />
+              <MFTextField
+                name="anyProjectspecificSoftwareRequirement"
+                type="text"
+              />
               <MFTextField name="servicePriority" type="text" />
               <MFTextField name="recoveryTimelines" type="text" />
               <MFTextField name="primaryLocation" type="text" />
@@ -35,24 +38,24 @@ export const EditUserForm = props => (
               <MFTextField name="remarks" type="text" />
               <MFTextField name="dataReviewedBy" type="text" />
               <MFTextField name="shiftStartTime" type="text" />
-              <MFCheckbox name="isWorkFromHomeAvl" value={true} />
-              <MFCheckbox name="eccAccomadationNeeded" value={true} />
+              <MFCheckbox name="isWorkfromHomePossible" value={true} />
+              <MFCheckbox name="eccAccomodationNeeded" value={true} />
               <MFTextField name="transportRequirements" type="text" />
               <div className="text">
                 <strong>Critical Resources:</strong>
               </div>
               <div>
-                <FieldArray name="criticalResources">
+                <FieldArray name="resources">
                   {({ push, remove }) => (
                     <>
-                      {values.criticalResources.map((r, i) => (
+                      {values.resources.map((r, i) => (
                         <div key={r.id} className="fieldArray">
-                          <MFTextField name={`criticalResources[${i}].name`} />
+                          <MFTextField name={`resources[${i}].name`} />
+                          <MFTextField name={`resources[${i}].contactNo`} />
+                          <MFTextField name={`resources[${i}].address`} />
                           <MFTextField
-                            name={`criticalResources[${i}].contactNo`}
-                          />
-                          <MFTextField
-                            name={`criticalResources[${i}].address`}
+                            name={`resources[${i}].resourceId`}
+                            type="number"
                           />
                           <div>
                             <Button
